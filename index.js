@@ -57,14 +57,9 @@ app.delete('/tasks/:id', async (req, res) => {
 
     // Start the server.
     app.listen(config.API_PORT, () => {
-        let appUrl;
-
-       
-            
-            appUrl= `http://localhost:${config.API_PORT}/`;
-        
-
-        console.info(`Ready! Follow the link to open your app: ${appUrl}`);
+             let appUrl;
+            appUrl= `http://localhost:${config.API_PORT}/`;  
+            console.info(`Ready! Follow the link to open your app: ${appUrl}`);
     });
 
 })().catch(error => console.error(error.stack));
